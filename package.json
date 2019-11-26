@@ -1,0 +1,37 @@
+{
+  "name": "rob-home.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rob-home/rob-home.github.io.git"
+  },
+  "dependencies": {
+    "angular": "^1.5.2",
+    "angular-route": "^1.5.2",
+    "angular-filter": "^0.5.17",
+    "bootstrap": "^3.3.4",
+    "jquery": "^1.11.2",
+    "lodash": "^4.6.1",
+    "moment": "^2.10.3",
+    "numeral": "^2.0.6",
+    "angular-ui-bootstrap": "^1.2.4",
+    "angular-loading-overlay": "^1.1.1",
+    "angular-spinner": "^1.0.1"
+  },
+  "devDependencies": {
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "run-sequence": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-debug": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-less": "^3.5.0",
+    "gulp-bundle-assets": "^2.29.0",
+    "gulp-if": "^3.0.0",
+    "lazypipe": "^1.0.2"
+  }
+}
