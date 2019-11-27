@@ -2,6 +2,7 @@ const less = require('gulp-less');
 const uglify = require('gulp-uglify');
 const gulpIf = require('gulp-if');
 const lazypipe = require('lazypipe');
+const ngAnnotate = require('gulp-ng-annotate');
 
 function stringEndsWith(str, suffix) {
   return str.indexOf(suffix, str.length - suffix.length) !== -1;
@@ -17,7 +18,7 @@ function isJsFile(file) {
 
 const scriptTransforms = lazypipe()
   .pipe(function () {
-    return gulpIf(isJsFile, uglify());
+    return gulpIf(isJsFile, ngAnnotate());
   });
 
 const styleTransforms = lazypipe()
@@ -39,8 +40,13 @@ module.exports = {
       options: {
         rev: false,
         transforms: {
-          // scripts: scriptTransforms,
+          scripts: scriptTransforms,
           styles: styleTransforms
+        },
+        pluginOptions: {
+          'gulp-sourcemaps': {
+            init: {debug: true}
+          }
         },
         dest: './scripts'
       }
