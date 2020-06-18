@@ -10,7 +10,7 @@
     "url": "git+https://github.com/rob-home/rob-home.github.io.git"
   },
   "dependencies": {
-    "angular": "^1.5.2",
+    "angular": "^1.8.0",
     "angular-route": "^1.5.2",
     "angular-filter": "^0.5.17",
     "bootstrap": "^3.3.4",
